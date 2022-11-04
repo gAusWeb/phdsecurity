@@ -27,14 +27,14 @@ const Header = () => (
                 </div>
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
-            <Link href="/about">About</Link>
             <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="ms-auto">
-                    <Link href="/">
-                        <Nav.Link href="#home">Home</Nav.Link>
-                    </Link>
-                    {/* <Nav.Link href="#link">Services</Nav.Link>
-                        <Nav.Link href="#link">Contact</Nav.Link> */}
+                    <Nav.Link>
+                        <Link href="/">Home</Link>
+                    </Nav.Link>
+                    <Nav.Link>
+                        <Link href="/about">About</Link>
+                    </Nav.Link>
                     {/* <NavDropdown title="Dropdown" id="basic-nav-dropdown">
                             <NavDropdown.Item href="#action/3.1">
                                 Action

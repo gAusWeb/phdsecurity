@@ -1,8 +1,9 @@
 import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
-import Header from "./components/Header";
-import ImageCarousel from "./components/ImageCarousel";
+import Header from "@/components/Header";
+import ImageCarousel from "@/components/ImageCarousel";
+import { Container } from "react-bootstrap";
 
 export default function Home() {
     return (
@@ -21,7 +22,9 @@ export default function Home() {
             <ImageCarousel />
 
             <main>
-                <h1>Welcome to PHD Security</h1>
+                <Container>
+                    <h1>Welcome to PHD Security</h1>
+                </Container>
             </main>
 
             <footer className={styles.footer}></footer>
